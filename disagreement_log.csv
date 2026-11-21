@@ -1,0 +1,57 @@
+﻿image,label,field,issue,mine,peer,verdict,guideline_rule,action
+D02.png,person,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.38,,mine,4.4-5,"Giữ box của mình. Box person của peer vượt ra ngoài ảnh (y âm hoặc > 1024 trên ảnh 1280x1024), có vẻ vẽ như ảnh chưa xoay; peer vẽ lại sát phần thân thấy được"
+D02.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.4-5,"Giữ box của mình. Box person của peer vượt ra ngoài ảnh (y âm hoặc > 1024 trên ảnh 1280x1024), có vẻ vẽ như ảnh chưa xoay; peer vẽ lại sát phần thân thấy được"
+D02.png,face13,mouth_right.occluded,khác cờ,1,0,mine,4.6,"Giữ occluded=1: tay cầm cốc che khóe miệng phải, vẫn đoán chắc vị trí"
+D03.png,face,eye_left,khác giá trị (IoU=0.66),open,unknown,peer,4.4-1,"Sửa eye_left=unknown: mặt quay đi, mắt khuất sau gọng kính, không thấy khe mắt (cabin_check cũng cảnh báo)"
+D03.png,hand,on_wheel,khác giá trị (IoU=0.89),no,unknown,mine,4.7,"Giữ on_wheel=no: tay thấy rõ đang cầm dây an toàn, không chạm vô lăng"
+D03.png,face13,left_eye_outer.occluded,khác cờ,0,1,mine,4.6,"Giữ outside=1 (không thấy mắt, không đoán chắc vị trí). Đặt lại 4 điểm mắt trái theo trục y: mắt trái có y lớn hơn mắt phải (4.4-2)"
+D03.png,face13,left_eye_outer.outside,khác cờ,1,0,mine,4.6,"Giữ outside=1 (không thấy mắt, không đoán chắc vị trí). Đặt lại 4 điểm mắt trái theo trục y: mắt trái có y lớn hơn mắt phải (4.4-2)"
+D03.png,face13,left_eye_inner.occluded,khác cờ,0,1,mine,4.6,"Giữ outside=1 (không thấy mắt, không đoán chắc vị trí). Đặt lại 4 điểm mắt trái theo trục y: mắt trái có y lớn hơn mắt phải (4.4-2)"
+D03.png,face13,left_eye_inner.outside,khác cờ,1,0,mine,4.6,"Giữ outside=1 (không thấy mắt, không đoán chắc vị trí). Đặt lại 4 điểm mắt trái theo trục y: mắt trái có y lớn hơn mắt phải (4.4-2)"
+D03.png,face13,left_eye_upper.occluded,khác cờ,0,1,mine,4.6,"Giữ outside=1 (không thấy mắt, không đoán chắc vị trí). Đặt lại 4 điểm mắt trái theo trục y: mắt trái có y lớn hơn mắt phải (4.4-2)"
+D03.png,face13,left_eye_upper.outside,khác cờ,1,0,mine,4.6,"Giữ outside=1 (không thấy mắt, không đoán chắc vị trí). Đặt lại 4 điểm mắt trái theo trục y: mắt trái có y lớn hơn mắt phải (4.4-2)"
+D03.png,face13,left_eye_lower.occluded,khác cờ,0,1,mine,4.6,"Giữ outside=1 (không thấy mắt, không đoán chắc vị trí). Đặt lại 4 điểm mắt trái theo trục y: mắt trái có y lớn hơn mắt phải (4.4-2)"
+D03.png,face13,left_eye_lower.outside,khác cờ,1,0,mine,4.6,"Giữ outside=1 (không thấy mắt, không đoán chắc vị trí). Đặt lại 4 điểm mắt trái theo trục y: mắt trái có y lớn hơn mắt phải (4.4-2)"
+D03.png,face13,right_eye_outer.occluded,khác cờ,1,0,peer,4.6,Đổi right_eye_* từ occluded sang outside: hai mắt đều eye=unknown nên không đoán chắc vị trí điểm; không đặt điểm cho đủ
+D03.png,face13,right_eye_outer.outside,khác cờ,0,1,peer,4.6,Đổi right_eye_* từ occluded sang outside: hai mắt đều eye=unknown nên không đoán chắc vị trí điểm; không đặt điểm cho đủ
+D03.png,face13,right_eye_inner.occluded,khác cờ,1,0,peer,4.6,Đổi right_eye_* từ occluded sang outside: hai mắt đều eye=unknown nên không đoán chắc vị trí điểm; không đặt điểm cho đủ
+D03.png,face13,right_eye_inner.outside,khác cờ,0,1,peer,4.6,Đổi right_eye_* từ occluded sang outside: hai mắt đều eye=unknown nên không đoán chắc vị trí điểm; không đặt điểm cho đủ
+D03.png,face13,right_eye_upper.occluded,khác cờ,1,0,peer,4.6,Đổi right_eye_* từ occluded sang outside: hai mắt đều eye=unknown nên không đoán chắc vị trí điểm; không đặt điểm cho đủ
+D03.png,face13,right_eye_upper.outside,khác cờ,0,1,peer,4.6,Đổi right_eye_* từ occluded sang outside: hai mắt đều eye=unknown nên không đoán chắc vị trí điểm; không đặt điểm cho đủ
+D03.png,face13,right_eye_lower.occluded,khác cờ,1,0,peer,4.6,Đổi right_eye_* từ occluded sang outside: hai mắt đều eye=unknown nên không đoán chắc vị trí điểm; không đặt điểm cho đủ
+D03.png,face13,right_eye_lower.outside,khác cờ,0,1,peer,4.6,Đổi right_eye_* từ occluded sang outside: hai mắt đều eye=unknown nên không đoán chắc vị trí điểm; không đặt điểm cho đủ
+D03.png,face13,mouth_right.occluded,khác cờ,1,0,ambiguous,4.6,"Mặt quay đi, khóe miệng phải tối và khuất một phần. Tạm giữ occluded=1; ghi D03 face13 mouth_right vào TEAM.md, hỏi coach"
+D04.png,face,eye_left,khác giá trị (IoU=0.69),unknown,open,peer,4.4-2,Sửa eye_left=open: mắt thấy được (y lớn hơn) là mắt trái; mình gán ngược trái/phải
+D04.png,face,eye_right,khác giá trị (IoU=0.69),open,unknown,peer,4.4-1,"Sửa eye_right=unknown: mắt phải khuất sau sống mũi, các điểm right_eye_* đều outside"
+D04.png,face,gaze_zone,khác giá trị (IoU=0.69),road,other,peer,4.5,"Sửa gaze_zone=other: đầu ngửa ra sau, nhìn lên trần, không nhìn qua kính chắn gió; ghi lý do vào ghi chú"
+D04.png,hand,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,mine,4.2,"Giữ. Hai tay thấy rõ (một tay trên bụng, một tay trên đùi); peer thiếu box hand, peer bổ sung"
+D04.png,hand,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.00,,mine,4.2,"Giữ. Hai tay thấy rõ (một tay trên bụng, một tay trên đùi); peer thiếu box hand, peer bổ sung"
+D04.png,person,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.36,,mine,4.4-5,"Giữ box của mình. Box person của peer vượt ra ngoài ảnh (y âm hoặc > 1024 trên ảnh 1280x1024), có vẻ vẽ như ảnh chưa xoay; peer vẽ lại sát phần thân thấy được"
+D04.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.4-5,"Giữ box của mình. Box person của peer vượt ra ngoài ảnh (y âm hoặc > 1024 trên ảnh 1280x1024), có vẻ vẽ như ảnh chưa xoay; peer vẽ lại sát phần thân thấy được"
+D04.png,face13,mouth_right.occluded,khác cờ,1,0,peer,4.6,"Sửa occluded=0: khóe miệng phải thấy rõ, không có gì che"
+D05.png,person,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.45,,mine,4.4-5,"Giữ box của mình. Box person của peer vượt ra ngoài ảnh (y âm hoặc > 1024 trên ảnh 1280x1024), có vẻ vẽ như ảnh chưa xoay; peer vẽ lại sát phần thân thấy được"
+D05.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.4-5,"Giữ box của mình. Box person của peer vượt ra ngoài ảnh (y âm hoặc > 1024 trên ảnh 1280x1024), có vẻ vẽ như ảnh chưa xoay; peer vẽ lại sát phần thân thấy được"
+D06.png,face,eye_left,khác giá trị (IoU=0.87),open,closed,peer,4.5,Sửa eye_left=closed: thấy rõ hai mí khép
+D06.png,face,eye_right,khác giá trị (IoU=0.87),open,closed,peer,4.5,Sửa eye_right=closed: thấy rõ hai mí khép
+D06.png,person,box,chỉ có ở mine (hoặc IoU thấp),IoU=0.50,,mine,4.4-5,"Giữ box của mình. Box person của peer vượt ra ngoài ảnh (y âm hoặc > 1024 trên ảnh 1280x1024), có vẻ vẽ như ảnh chưa xoay; peer vẽ lại sát phần thân thấy được"
+D06.png,person,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.4-5,"Giữ box của mình. Box person của peer vượt ra ngoài ảnh (y âm hoặc > 1024 trên ảnh 1280x1024), có vẻ vẽ như ảnh chưa xoay; peer vẽ lại sát phần thân thấy được"
+S01_rgb.png,frame_meta,modality,khác giá trị,ir,rgb,peer,4.3-1,Sửa modality=rgb: ảnh _rgb phải là rgb (mình đặt nhầm ir)
+S02_ir.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,peer,4.2,"Thêm box face cho người lớn (OMS: person kèm box face, chỉ cần box; thuộc tính để unknown/other)"
+S02_ir.png,hand,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.1,Không sửa. hand chỉ dùng cho DMS; ảnh OMS chỉ gán label bảng 4.1 ghi cho OMS (4.3). Peer xóa box hand
+S02_ir.png,hand,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.1,Không sửa. hand chỉ dùng cho DMS; ảnh OMS chỉ gán label bảng 4.1 ghi cho OMS (4.3). Peer xóa box hand
+S02_rgb.png,frame_meta,modality,khác giá trị,ir,rgb,peer,4.3-1,Sửa modality=rgb: ảnh _rgb phải là rgb (mình đặt nhầm ir)
+S02_rgb.png,hand,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.1,Không sửa. hand chỉ dùng cho DMS; ảnh OMS chỉ gán label bảng 4.1 ghi cho OMS (4.3). Peer xóa box hand
+S02_rgb.png,hand,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.1,Không sửa. hand chỉ dùng cho DMS; ảnh OMS chỉ gán label bảng 4.1 ghi cho OMS (4.3). Peer xóa box hand
+S02_rgb.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,peer,4.2,"Thêm box face cho người lớn (OMS: person kèm box face, chỉ cần box; thuộc tính để unknown/other)"
+S03_rgb.png,frame_meta,modality,khác giá trị,ir,rgb,peer,4.3-1,Sửa modality=rgb: ảnh _rgb phải là rgb (mình đặt nhầm ir)
+S04_ir.png,hand,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.1,Không sửa. hand chỉ dùng cho DMS; ảnh OMS chỉ gán label bảng 4.1 ghi cho OMS (4.3). Peer xóa box hand
+S04_ir.png,hand,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.1,Không sửa. hand chỉ dùng cho DMS; ảnh OMS chỉ gán label bảng 4.1 ghi cho OMS (4.3). Peer xóa box hand
+S04_ir.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,peer,4.2,"Thêm box face cho người lớn (OMS: person kèm box face, chỉ cần box; thuộc tính để unknown/other)"
+S04_rgb.png,frame_meta,modality,khác giá trị,ir,rgb,peer,4.3-1,Sửa modality=rgb: ảnh _rgb phải là rgb (mình đặt nhầm ir)
+S04_rgb.png,hand,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.1,Không sửa. hand chỉ dùng cho DMS; ảnh OMS chỉ gán label bảng 4.1 ghi cho OMS (4.3). Peer xóa box hand
+S04_rgb.png,face,box,chỉ có ở peer (hoặc IoU thấp),,,peer,4.2,"Thêm box face cho người lớn (OMS: person kèm box face, chỉ cần box; thuộc tính để unknown/other)"
+S04_rgb.png,hand,box,chỉ có ở peer (hoặc IoU thấp),,,mine,4.1,Không sửa. hand chỉ dùng cho DMS; ảnh OMS chỉ gán label bảng 4.1 ghi cho OMS (4.3). Peer xóa box hand
+S05_rgb.png,frame_meta,modality,khác giá trị,ir,rgb,peer,4.3-1,Sửa modality=rgb: ảnh _rgb phải là rgb (mình đặt nhầm ir)
+S06_rgb.png,frame_meta,modality,khác giá trị,ir,rgb,peer,4.3-1,Sửa modality=rgb: ảnh _rgb phải là rgb (mình đặt nhầm ir)
+S07_rgb.png,frame_meta,modality,khác giá trị,ir,rgb,peer,4.3-1,Sửa modality=rgb: ảnh _rgb phải là rgb (mình đặt nhầm ir)
+S08_rgb.png,frame_meta,modality,khác giá trị,ir,rgb,peer,4.3-1,Sửa modality=rgb: ảnh _rgb phải là rgb (mình đặt nhầm ir)
